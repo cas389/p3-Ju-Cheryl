@@ -6,7 +6,7 @@ Custom Fonts
 
 @font-face {
   font-family: 'Rockwell';
-  src: url(..fonts/Rockwell.ttf) format('truetype');
+  src: url('../fonts/Rockwell.ttf') format('truetype');
 }
 
 /*===========================
@@ -35,6 +35,11 @@ header {
     width: 100vw;
 }
 
+.header-image {
+    margin: 14px 0px -20px 10px;
+}
+
+
 /*== Menu as a whole ===*/
 .menu,
 .header-social-icons {
@@ -58,17 +63,18 @@ header {
     width: 19%;
     position: relative;
     vertical-align: top;
-    bottom: 55px;
+    bottom: 37px;
     font-family: 'Rockwell', serif;
+    margin: 0 5px;
 }
 
 /*== Changes all menu items as a whole. ===*/
 .menu ul li a {
     color: #fbfbfb;
     display: block;
-    padding: 15px;
+    padding: 12px 5px 5px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     transition: .3s;
@@ -84,7 +90,7 @@ header {
 }
 
 
-/*== Targets the secondary sub-menu in Website Projects and Graphic Design Projects ===*/
+/*== Targets the secondary sub-menu in Portfolio ===*/
 .sub-menu {
     display: none;
 }
@@ -92,18 +98,24 @@ header {
 .menu-item:hover .sub-menu {
     display: block;
     position: absolute;
-    top: 55px;
+    top: 41px;
     width: 100%;
     background: #17bcba;
 
 }
 
+.menu-item:hover > a {
+color: #0e4a64;
+}
+
+/*== Social Media Icons in Header ===*/
+
 .header-social-icons a {
   font-size: 40px;
   color: #0e4a64;
   position: relative;
-  bottom: 20px;
-  left: -50px;
+  bottom: 15px;
+  padding-left: 2px;
 }
 
 .header-social-icons a:hover {
