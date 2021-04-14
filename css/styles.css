@@ -22,6 +22,67 @@ Universal Styling
   box-sizing: border-box;
 }
 
+h1,
+h3 {
+  font-family: 'Rockwell', serif;
+}
+
+h2,
+h4,
+h5,
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h4,
+h5 {
+  color: white;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+h3 {
+  font-size: 50px;
+  color: #3b3c40;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+h4 {
+  background-color: #0e4a64;
+  font-size: 23px;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h5 {
+  background-color: #939598;
+  font-size: 25px;
+  padding: 10px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 35px;
+  margin: 7px;
+}
 
 
 /*===========================
@@ -33,9 +94,10 @@ Header Styling
 header {
     background-color: #f5f5f3;
     width: 100vw;
+    z-index: 99999;
 }
 
-.header-image {
+header img {
     margin: 14px 0px -20px 10px;
 }
 
@@ -101,7 +163,6 @@ header {
     top: 41px;
     width: 100%;
     background: #17bcba;
-
 }
 
 .menu-item:hover > a {
@@ -120,4 +181,197 @@ color: #0e4a64;
 
 .header-social-icons a:hover {
   color: #17bcba;
+}
+
+
+
+/*===========================
+
+Home Page - Hero Styling
+
+===========================*/
+
+main {
+    margin: 0 100px;
+}
+main .hero {
+  text-align: center;
+  top: 50px;
+}
+
+main .hero-content {
+    position: relative;
+    top: -400px;
+    max-width: 800px;
+    left: 220px;
+}
+
+main .hero-button {
+    background-color: #0e4a64;
+    bottom: 37px;
+    font-family: 'Raleway', serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    position: relative;
+    top: 60px;
+    transition: .3s;
+}
+
+main .hero-button:hover {
+    background: white;
+    box-shadow: 10px 10px 10px #0e4a64;
+    color: #00bfbb;
+    font-weight: bold;
+    border-bottom: 10px solid #00bfbb;
+    transition: .3s;
+}
+/*===========================
+
+Home Page - Opening Text
+
+===========================*/
+
+.intro-text {
+    position: relative;
+    top: -200px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-top: 5px solid #f5f5f3;
+    border-bottom: 5px solid #f5f5f3;
+    padding: 30px 0;
+}
+
+.intro-text a {
+  text-decoration: none;
+  color: #939598;
+  transition: .3s;
+}
+
+.intro-text a:hover {
+  color: #0e4a64;
+  border-bottom: 2px dotted #0e4a64;
+  transition: .3s;
+}
+
+/*===========================
+
+Home Page - Three Column Section
+
+===========================*/
+
+.column-photos {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+
+}
+
+.hidden-content {
+  visibility: hidden;
+  display: none;
+}
+
+.three-columns {
+    background: #ffffff url("../images/diamond.png") repeat center;
+    max-width: 100vw;
+    height: 900px;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    top: -125px;
+}
+
+.column-one,
+.column-two,
+.column-three {
+  width: 30%;
+  position: absolute;
+  background-color: white;
+  border: 2px solid black;
+  padding: 25px;
+  height: 820px;
+}
+
+.column-one {
+  left: 30px;
+}
+
+.column-two {
+  left: 35%;
+}
+
+.column-three {
+    right: 30px;
+}
+
+.three-columns p {
+  margin-bottom: 10px;
+}
+
+
+/* Sweep To Bottom Hover CSS */
+.explore-more-button {
+  background: #0e4a64;
+  margin-top: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.explore-more-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00bfbb;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-radius: 5px;
+
+}
+.explore-more-button:hover, .explore-more-button:focus, .explore-more-button:active {
+  color: #0e4a64;
+}
+.explore-more-button:hover:before, .explore-more-button:focus:before, .explore-more-button:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/*===========================
+
+Lightbox CSS Overwright
+
+===========================*/
+
+.lb-data .lb-caption {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1em;
 }

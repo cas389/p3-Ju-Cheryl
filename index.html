@@ -9,7 +9,8 @@
     <meta charset="utf-8">
     <title>Cheryl Ju Portfolio - Index</title>
 
-    <!-- Stylesheet -->
+    <!-- CSS Stylesheet -->
+    <link href="lightbox/src/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Google Fonts -->
@@ -19,6 +20,9 @@
     <!-- Font Awesome-->
     <script src="https://kit.fontawesome.com/b8e266d394.js" crossorigin="anonymous"></script>
 
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
 
 <!-- Website Body Information -->
@@ -26,18 +30,19 @@
 
     <!-- Website Header -->
     <header>
-      <a href="index.html"><img class="header-image" src="images/logo.png" alt="Deju Designs Logo" title="Deju Designs Logo" width="200px"/></a>
-      <!-- Website Navigation -->
+      <a href="index.html"><img src="images/logo.png" alt="Deju Designs Logo" title="Deju Designs Logo" width="200px"/></a>
 
+      <!-- Website Navigation -->
       <nav class="menu">
         <ul>
           <li class="menu-item"><a href="index.html">Home</a></li>
           <li class="menu-item"><a href="about.html">About</a></li>
           <li class="menu-item"><a href="#">Portfolio</a>
               <ul class="sub-menu">
+                <li class="menu-item"><a href="portfolio/indesign-examples.html">InDesign Examples</a></li>
                 <li class="menu-item"><a href="portfolio/logo-examples.html">Logo Examples</a></li>
                 <li class="menu-item"><a href="portfolio/other-examples.html">Other Examples</a></li>
-                <li class="menu-item"><a href="portfolio/photoshop-illustrator-examples.html">Photoshop & </br> Illustrator Examples</a></li>
+                <li class="menu-item"><a href="portfolio/photoshop-illustrator-examples.html">Photoshop & Illustrator Examples</a></li>
               </ul>
           </li>
           <li class="menu-item"><a href="http://www.dejudesigns.com" target="_blank">Shop</a></li>
@@ -54,5 +59,82 @@
         <a href="https://www.tiktok.com/@dejudesigns" target="_blank"><i class="fab fa-tiktok"></i></a>
       </div>
     </header>
+
+    <main>
+      <!-- Hero Image -->
+      <section class="hero">
+        <img src="images/cheryl-hero.png" alt="Hero Image of Cheryl Ju" title="Hero Image of Cheryl Ju" width="80%" />
+        <div class="hero-content">
+          <h1>I’m Cheryl Ju.</h1>
+          <h2>Graphic designer and hand-crafter with a budding knowledge of web design.</h2>
+          <a class="hero-button" href="about.html">Check out my resume!</a>
+        </div>
+      </section>
+
+      <!-- Intro Text -->
+      <section class="intro-text">
+        <h3>Hello everyone!</h3>
+        <h4>I’m glad you have stumbled upon my personal portfolio website. </h4>
+        <p>While you are here, please feel free to review my resume, portfolio, or even shop for hand-crafted items! If you would like more information in regards to having a logo, design, flyer, etc. created, please fill out my <a href="contact.html">contact form</a>, and I’ll get back to you as soon as possible.</p>
+      </section>
+
+      <section class="three-columns">
+        <div class="column-one">
+          <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_01.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet">
+            <img class="column-photos" src="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_01.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet" />
+          </a>
+
+          <div class="hidden-content">
+
+            <!-- Spring 2020 Adult Education Booklet Photo Gallery Section -->
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_02.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_03.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_04.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_05.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_06.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_07.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_08.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_09.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_10.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_11.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+            <a href="images/portfolio/indesign/professional/Spring-2020-Adult-Ed-Booklet/Spring-2020-Adult-Ed-Booklet_Page_12.jpg" data-lightbox="Adult-Ed-2020" data-title="Spring 2020 Adult Education Booklet"><img src="images/background-lower.jpg" alt="Spring 2020 Adult Education Booklet" title="Spring 2020 Adult Education Booklet"></a>
+
+          </div>
+          <h5>InDesign Projects</h5>
+          <p>Magazine layouts, Annual Reports, booklets, etc have been an essential part of my freelance and professional developement. Out of the entire Adobe suite, InDesign is where I feel most comfortable. Explore some of the examples of past work in my portfolio. </p>
+          <p><a class="explore-more-button" href="portfolio/indesign-examples.html">InDesign Portfolio</a></p>
+        </div>
+
+        <div class="column-two">
+          <a href="images/portfolio/logo/AscendGroup.png" data-lightbox="Ascend-Group-Logo" data-title="Ascend Group Logo">
+            <img class="column-photos" src="images/portfolio/logo/AscendGroup.png" alt="Ascend Group Logo" title="Ascend Group Logo" />
+          </a>
+          <h5>Logo Designs</h5>
+          <p>During my time creating Deju Designs LLC, I have worked on a few logo designs. These are a few different logos I have designed over the years.</p>
+          <p><a class="explore-more-button" href="portfolio/logo-examples.html">Logo Examples</a></p>
+        </div>
+
+        <div class="column-three">
+          <a href="images/portfolio/photoshop/Twilight.jpg" data-lightbox="Twilight" data-title="Photoshop - Twillight Reimagined Book Cover">
+            <img class="column-photos" src="images/portfolio/photoshop/Twilight.jpg" alt="Photoshop - Twillight Reimagined Book Cover" title="Photoshop - Twillight Reimagined Book Cover" />
+          </a>
+          <h5>Photoshop & Illustrator Designs</h5>
+          <p>Photoshop has been a staple with creating designs since the beginning. From photo to manipulations, to editing photos, Photoshop can handle it all. Illustrator is also imparative to creating final designs, either it being a logo, vector image, flyer or more.</p>
+          <p><a class="explore-more-button" href="portfolio/photoshop-illustrator-examples.html">View Projects</a></p>
+        </div>
+      </section>
+    </main>
+    <script src="lightbox/src/js/lightbox.js"></script>
   </body>
 </html>
