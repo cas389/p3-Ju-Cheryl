@@ -50,9 +50,12 @@ h2 {
     font-size: 40px;
 }
 
-h3 {
+h3, h6 {
   font-size: 50px;
   color: #3b3c40;
+}
+
+h3 {
   margin-bottom: 18px;
   text-align: center;
 }
@@ -78,12 +81,30 @@ h5 {
   margin-top: 10px;
 }
 
+h6 {
+  border-left: 20px solid #0e4a64;
+  padding-left: 20px;
+  font-family: 'Rockwell', serif;
+}
+
 p {
   font-size: 20px;
   line-height: 35px;
   margin: 7px;
 }
 
+.secondary-page {
+  margin: 0 200px;
+}
+
+.link-in-main-text {
+  text-decoration: none;
+  color: black;
+}
+
+.link-in-main-text:hover {
+  color: #17bcba;
+}
 
 /*===========================
 
@@ -439,4 +460,73 @@ Lightbox CSS Overwright
     font-size: 30px;
     font-weight: bold;
     line-height: 1em;
+}
+
+/*===========================
+
+Contact Page & Form Styling
+
+===========================*/
+
+.contact-us {
+  position: relative;
+  top: 50px;
+}
+
+.contact-form {
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.contact-form,
+.contact-us p {
+  line-height: 25px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+
+.label_input_wrap {
+  display: block;
+}
+
+
+input,
+textarea  {
+  border: 1px solid #00bfbb;
+  border-radius: 4px;
+  padding: 9px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #f5f5f3;
+  font-family: 'Raleway', sans-serif;
+}
+
+label {
+  color: #00bfbb;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+.reset input,
+.submit input {
+  background: #00bfbb;
+  color: white;
+  padding: 15px 20px;
+  font-size: 20px;
+  transition: .5s;
+}
+
+.reset input:hover,
+.submit input:hover {
+  background: white;
+  color: #00bfbb;
+  transition: .5s;
+}
+
+.reset,
+.submit {
+  display: inline-block;
+  width: 597px;
+  margin-bottom: 30px;
 }
