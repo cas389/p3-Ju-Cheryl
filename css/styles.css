@@ -85,12 +85,14 @@ h6 {
   border-left: 20px solid #0e4a64;
   padding-left: 20px;
   font-family: 'Rockwell', serif;
+  padding-top: 10px;
 }
 
 p {
   font-size: 20px;
   line-height: 35px;
   margin: 7px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .secondary-page {
@@ -99,13 +101,20 @@ p {
 
 .link-in-main-text {
   text-decoration: none;
-  color: black;
+  color: #939598;
+  transition: .3s;
 }
 
 .link-in-main-text:hover {
-  color: #17bcba;
+  color: #0e4a64;
+  border-bottom: 2px dotted #0e4a64;
+  transition: .3s;
 }
 
+.main-container {
+  position: relative;
+  top: 50px;
+}
 /*===========================
 
 Header Styling
@@ -331,18 +340,6 @@ Home Page - Opening Text
     padding: 30px 0;
 }
 
-.intro-text a {
-  text-decoration: none;
-  color: #939598;
-  transition: .3s;
-}
-
-.intro-text a:hover {
-  color: #0e4a64;
-  border-bottom: 2px dotted #0e4a64;
-  transition: .3s;
-}
-
 /*===========================
 
 Home Page - Three Column Section
@@ -468,11 +465,6 @@ Contact Page & Form Styling
 
 ===========================*/
 
-.contact-us {
-  position: relative;
-  top: 50px;
-}
-
 .contact-form {
   margin: 20px auto;
   max-width: 1200px;
@@ -529,4 +521,86 @@ label {
   display: inline-block;
   width: 597px;
   margin-bottom: 30px;
+}
+
+/*===========================
+
+About Me Page Styling
+
+===========================*/
+
+.about-me-photo {
+  float: left;
+  padding: 17px 20px 10px 0;
+}
+
+.two-columns-col-one,
+.two-columns-col-two {
+  width: 45%;
+}
+
+.two-columns-col-two {
+  position: absolute;
+  right: 100px;
+  top: 70px;
+}
+
+.two-columns-col-one p,
+.two-columns-col-two p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.two-columns-col-one span {
+  color: #0e4a64;
+  font-family: "Rockwell", serif;
+  padding-right: 3px;
+  text-transform: uppercase;
+}
+
+.resume-container {
+  background-color: #f5f5f3;
+  max-width: 100vw;
+  padding: 50px 120px;
+  margin: 100px 0;
+}
+
+.resume {
+  padding-left: 80px;
+}
+
+.resume,
+.resume-col-2 {
+  width: 800px;
+}
+
+.resume-col-2 {
+  position: absolute;
+  top: 895px;
+  right: 230px;
+}
+
+.resume ul,
+.resume-col-2 ul {
+  margin: 20px;
+  font-size: 20px;
+  line-height: 35px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  list-style: outside none none;
+}
+
+.resume li,
+.resume-col-2 li {
+  padding-bottom: 20px;
+  list-style-image: url(../images/bullet-point.png);
+}
+
+.resume li::first-line,
+.resume-col-2 li::first-line,
+.resume span {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 22px;
 }
