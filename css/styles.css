@@ -611,12 +611,19 @@ Portfolio Pages Styling
 
 ===========================*/
 
-.portfolio {
+.portfolio,
+.portfolio-other {
   position: relative;
   top: 100px;
   background-color: #f5f5f3;
-  height: 1600px;
   margin-bottom: 120px;
+}
+.portfolio {
+  height: 1600px;
+}
+.portfolio-other {
+  height: 1050px;
+
 }
 
 .flip-card {
