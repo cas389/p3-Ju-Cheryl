@@ -96,6 +96,10 @@ p {
   color: #231f20;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .secondary-page {
   margin: 0 200px;
 }
@@ -223,12 +227,12 @@ Footer
 
 footer {
   background: #3b3c40;
-  color: white;
   padding: 40px;
 }
 
 footer p {
   line-height: 30px;
+  color: white;
 }
 
 footer a {
@@ -741,4 +745,29 @@ Portfolio Pages Styling
 
 .portfolio-column-three {
     right: 30px;
+}
+
+
+/*===========================
+
+Animation for Home Page
+
+===========================*/
+
+.animation {
+  animation-duration: 10s;
+  animation-name: slidein;
+  animation-iteration-count:infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+}
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
