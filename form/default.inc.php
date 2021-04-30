@@ -249,7 +249,7 @@ footer a:hover {
 
 
 <header>
-  <a href="index.html"><img class="header-image" src="../images/logo.png" alt="Deju Designs Logo" title="Deju Designs Logo" width="200px"/></a>
+  <a href="index.html"><img class="header-image" src="../images/logo.png" alt="Deju Designs Logo" title="Deju Designs Logo" width="200"/></a>
   <!-- Website Navigation -->
 
   <nav class="menu">
@@ -261,7 +261,7 @@ footer a:hover {
             <li class="menu-item"><a href="../portfolio/indesign-examples.html">InDesign Examples</a></li>
             <li class="menu-item"><a href="../portfolio/logo-examples.html">Logo Examples</a></li>
             <li class="menu-item"><a href="../portfolio/other-examples.html">Other Examples</a></li>
-            <li class="menu-item"><a href="../portfolio/photoshop-illustrator-examples.html">Photoshop & </br> Illustrator Examples</a></li>
+            <li class="menu-item"><a href="../portfolio/photoshop-illustrator-examples.html">Photoshop & <br/> Illustrator Examples</a></li>
           </ul>
       </li>
       <li class="menu-item"><a href="http://www.dejudesigns.com" target="_blank">Shop</a></li>
@@ -285,11 +285,11 @@ footer a:hover {
 </div>
 
 <footer>
-  <a href="../index.html"><img class="footer-logo" src="../images/logo-white.png" alt="Deju Designs Logo" title="Deju Designs Logo" width="200px" /></a>
+  <a href="../index.html"><img class="footer-logo" src="../images/logo-white.png" alt="Deju Designs Logo" title="Deju Designs Logo" width="200" /></a>
 
-  <p>Cheryl Ju <br/ >
-    <a href="mailto:dejudesignsllc@gmail.com">dejudesignsllc@gmail.com</a> <br/ >
-    <a href="tel:610-368-3475">610-368-3475</a> <br/ >
+  <p>Cheryl Ju <br/>
+    <a href="mailto:dejudesignsllc@gmail.com">dejudesignsllc@gmail.com</a> <br/>
+    <a href="tel:610-368-3475">610-368-3475</a> <br/>
     Spring City, PA
   </p>
 

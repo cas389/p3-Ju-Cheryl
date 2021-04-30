@@ -272,6 +272,10 @@ main .hero {
   top: 50px;
 }
 
+main .hero-image {
+  width: 80%;
+}
+
 main .hero-content {
     position: relative;
     top: -400px;
